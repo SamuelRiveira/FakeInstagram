@@ -1,6 +1,8 @@
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.Card
 import androidx.compose.material.Divider
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -17,29 +19,38 @@ import androidx.compose.ui.window.rememberWindowState
 @Composable
 fun App(){
     Column (
-        verticalArrangement = Arrangement.spacedBy(8.dp),
-        modifier = Modifier.padding(8.dp)
+        verticalArrangement = Arrangement.spacedBy(8.dp)
     ){
-        Text(
-            text = "Instagram",
-            fontSize = 36.sp
-        )
-        Divider(
-            modifier = Modifier.fillMaxWidth(),
-            color = Color.Gray,
-            thickness = 1.dp
-        )
-        Text(
-            text = "Historias",
-            fontSize = 24.sp
-        )
-        Row {
-            images.forEach { image ->
-                Image(
-                    painter = painterResource(resourcePath = image.image),
-                    contentDescription = "Foto Perfil",
-                    modifier = Modifier.size(70.dp).padding(10.dp).clip(CircleShape)
-                )
+        Column(
+            modifier = Modifier.background(Color.White).fillMaxWidth().height(70.dp),
+            verticalArrangement = Arrangement.Center
+        ){
+            Text(
+                text = "Instagram",
+                fontSize = 36.sp
+            )
+        }
+        Column(
+            modifier = Modifier.background(Color.Gray).fillMaxWidth()
+        ) {
+            Text(
+                text = "Historias",
+                fontSize = 24.sp
+            )
+            Card(
+                modifier = Modifier.padding(top = 15.dp),
+                backgroundColor = Color(0xffc6b1c9),
+                elevation = 10.dp
+            ){
+                Row {
+                    images.forEach { image ->
+                        Image(
+                            painter = painterResource(resourcePath = image.image),
+                            contentDescription = "Foto Perfil",
+                            modifier = Modifier.size(90.dp).padding(10.dp).clip(CircleShape)
+                        )
+                    }
+                }
             }
         }
     }
