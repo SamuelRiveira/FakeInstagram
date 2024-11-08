@@ -99,7 +99,8 @@ fun App(){
                                 Image(
                                     painter = painterResource(resourcePath = publication.image),
                                     contentDescription = "Foto Publicacion",
-                                    contentScale = ContentScale.Crop
+                                    contentScale = ContentScale.Crop,
+                                    modifier = Modifier.fillMaxSize()
                                 )
                             }
                             Column(
