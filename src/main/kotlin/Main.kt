@@ -131,7 +131,7 @@ fun App(){
                 }
             }
             Column {
-
+                Text(text = "Suggestions for you")
             }
         }
     }
