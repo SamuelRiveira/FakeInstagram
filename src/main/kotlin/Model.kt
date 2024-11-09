@@ -33,7 +33,8 @@ val name = listOf(
     Name("Laura Valera"),
     Name("Javier Paz"),
     Name("Gloria Bermejo"),
-    Name("Leopoldo Vila")
+    Name("Leopoldo Vila"),
+    Name("Godofredo Eustaquio")
 )
 
 val images = listOf(
@@ -42,7 +43,12 @@ val images = listOf(
     Image("img3.jpeg"),
     Image("img4.jpeg"),
     Image("img5.jpeg"),
-    Image("img6.jpeg")
+    Image("img6.jpeg"),
+    Image("img7.jpeg"),
+    Image("img8.jpeg"),
+    Image("img9.jpeg"),
+    Image("img10.jpeg"),
+    Image("img11.jpeg")
 )
 
 val publications = listOf(
