@@ -15,7 +15,7 @@ Una aplicación en la que creo un Fake Instagram para mejorar en el desarrollo d
 ## 🛠️ Tecnologías Utilizadas
 
 - **Lenguaje:** [Kotlin](https://kotlinlang.org/)
-- **IDE:** [Android Studio](https://developer.android.com/studio)
+- **IDE:** [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 ## 📦 Instalación
 
